@@ -6,7 +6,7 @@ const cors = require("cors")
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
-app.use(cors({origin:true}));
+app.use(cors({ origin: "z-atlas-frontend-d1decb.spheron.app", credentials: true }))
 
 const port = 5000;
 
